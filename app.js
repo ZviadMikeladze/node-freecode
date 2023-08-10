@@ -1,7 +1,6 @@
-const amount = 12;
+const os = require("os");
 
-if (amount < 10) {
-  console.log("small");
-} else {
-  console.log("big");
-}
+const user = os.userInfo();
+
+console.log(user);
+console.log(os.uptime());
